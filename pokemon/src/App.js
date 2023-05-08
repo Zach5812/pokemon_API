@@ -18,8 +18,8 @@ function App() {
     <div style={{textAlign: "center"}}>
       <button onClick={showPokemon} >Fetch Pokemon</button>
 
-      {pokemon.map(p=>
-        <p>{p.name}</p>
+      {pokemon.map((p, i)=>
+        <p key={i}>{p.name}</p>
       )}
 
     </div>
